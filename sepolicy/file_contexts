@@ -12,3 +12,5 @@
 # BT/WiFi MAC
 /persist/.genmac                                        u:object_r:wifi_data_file:s0
 /persist/.bt_nv.bin                                     u:object_r:bluetooth_data_file:s0
+
+/dev/block/platform/msm_sdcc\.1/by-name/cache           u:object_r:cache_block_device:s0
