@@ -6,3 +6,7 @@ allow system_server proc_touchpanel:dir { search };
 r_dir_file(system_server, sysfs_usb_supply);
 
 allow system_server unlabeled:file unlink;
+
+# Persistent properties
+allow system_server persist_property_file:dir rw_dir_perms;
+allow system_server persist_property_file:file { create_file_perms unlink };
