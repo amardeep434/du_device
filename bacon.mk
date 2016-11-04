@@ -66,8 +66,8 @@ TARGET_SCREEN_WIDTH := 1080
 
 # Camera
 PRODUCT_PACKAGES += \
-    camera.bacon \
-    Snap
+    camera-wrapper.msm8974 \
+    SnapdragonCamera
 
 #PRODUCT_PROPERTY_OVERRIDES += \
 #    media.stagefright.codecremote=false
@@ -257,6 +257,7 @@ PRODUCT_PACKAGES += \
 
 # Call the proprietary setup
 $(call inherit-product-if-exists, vendor/oneplus/bacon/bacon-vendor.mk)
+$(call inherit-product-if-exists, vendor/coloros/find7a/find7a-vendor-blobs.mk)
 
 ifneq ($(QCPATH),)
 $(call inherit-product-if-exists, $(QCPATH)/prebuilt_HY11/target/product/msm8974/prebuilt.mk)
