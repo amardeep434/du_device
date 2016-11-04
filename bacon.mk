@@ -258,6 +258,7 @@ PRODUCT_PACKAGES += \
 # Call the proprietary setup
 $(call inherit-product-if-exists, vendor/oneplus/bacon/bacon-vendor.mk)
 $(call inherit-product-if-exists, vendor/coloros/find7a/find7a-vendor-blobs.mk)
+$(call inherit-product-if-exists, vendor/oneplus/bacon/bacon-vendor-blobs.mk)
 
 ifneq ($(QCPATH),)
 $(call inherit-product-if-exists, $(QCPATH)/prebuilt_HY11/target/product/msm8974/prebuilt.mk)
