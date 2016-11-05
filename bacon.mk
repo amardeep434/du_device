@@ -66,8 +66,7 @@ TARGET_SCREEN_WIDTH := 1080
 
 # Camera
 PRODUCT_PACKAGES += \
-    camera-wrapper.msm8974 \
-    SnapdragonCamera
+    camera-wrapper.msm8974
 
 #PRODUCT_PROPERTY_OVERRIDES += \
 #    media.stagefright.codecremote=false

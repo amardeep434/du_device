@@ -24,6 +24,9 @@ $(call inherit-product, vendor/du/config/nfc_enhanced.mk)
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/du/config/common_full_phone.mk)
 
+PRODUCT_PACKAGES += \
+    SnapdragonCamera
+
 PRODUCT_NAME := du_bacon
 PRODUCT_DEVICE := bacon
 PRODUCT_MANUFACTURER := OnePlus
